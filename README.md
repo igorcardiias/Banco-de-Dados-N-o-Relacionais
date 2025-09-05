@@ -22,7 +22,38 @@
  **Micro Serviços**: Um microsserviço é um pequeno componente de um aplicativo maior, responsável por uma função específica e que funciona de forma independente. Diferente de um sistema monolítico, onde tudo está numa única unidade, a arquitetura de microsserviços divide uma aplicação em serviços menores, flexíveis e com bases de código separadas. Estes microsserviços comunicam-se por meio de APIs e cada um pode ter sua própria tecnologia e base de dados.
 
 ## Limitações do Banco de Dados Relacionais
-**Escalabilidade vertical**: Limitada pela 
+
+### Rigidez e Estrutura
+
+**Estrutura Fixa**:
+O modelo relacional exige uma estrutura de tabelas e relacionamentos pré-definida, o que pode dificultar a adaptação a alterações nos requisitos do sistema.
+<br>
+
+**Não Suporta Dados Não Estruturados**:
+A estrutura baseada em tabelas não é ideal para armazenar dados não estruturados ou semiestruturados, como documentos, imagens ou vídeos. 
+<br>
+
+**Limitação de Atributos**:
+Atributos multivalorados (que podem ter vários valores) são geralmente não permitidos, exigindo que cada atributo tenha um valor único e atômico. 
+<br>
+
+### Escalabilidade e Desempenho: 
+
+**Dificuldade em Escalar Horizontalmente**:
+A escalabilidade horizontal (distribuir dados em vários servidores) é mais complexa em bancos de dados relacionais comparada com outros tipos de sistemas.
+
+**Complexidade de Consultas**:
+Em grandes volumes de dados, consultas complexas podem comprometer o desempenho, pois o sistema pode precisar de mais recursos de processamento.
+
+### Manutenção e Flexibilidade
+<br>
+
+**Manutenção Complexa**:
+Com o crescimento do volume de dados, a manutenção e otimização do banco de dados relacional podem se tornar tarefas complexas e demoradas. 
+<br>
+
+**Flexibilidade Limitada**:
+A necessidade de definir todas as restrições e relacionamentos de antemão pode reduzir a flexibilidade do sistema a longo prazo. 
 
 ## Limitações do Banco de Dados Não Relacionais
 **Escalabilidade Vertical**: Distribuiçoes em multiplos servidores.
