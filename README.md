@@ -46,7 +46,6 @@ A escalabilidade horizontal (distribuir dados em vários servidores) é mais com
 Em grandes volumes de dados, consultas complexas podem comprometer o desempenho, pois o sistema pode precisar de mais recursos de processamento.
 
 ### Manutenção e Flexibilidade
-<br>
 
 **Manutenção Complexa**:
 Com o crescimento do volume de dados, a manutenção e otimização do banco de dados relacional podem se tornar tarefas complexas e demoradas. 
