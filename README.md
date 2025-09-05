@@ -12,4 +12,5 @@
  **NOSQL (Not Only SQL" Não apenas SQL e refere-se a bancos de dados não relacionais que gerenciam e armazenam dados de formas flexíveis, não baseadas em tabelas tradicionais com esquemas fixos.)**
 
 
+
  [<- VOLTAR](https://github.com/igorcardiias/Banco-de-Dados-N-o-Relacionais.git)
