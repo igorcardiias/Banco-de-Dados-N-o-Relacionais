@@ -99,10 +99,44 @@ CRUD são as quatro operações fundamentais em qualquer banco de dados:
     
     $unset: remove campo
 
+## -----------------------------------------------
+
+### Atualizar UM documento ($set: muda ou cria o campo)
+
+#### Código: db["aula_crud"].updateOne({})
+
+    db["aula_crud"].updateOne(
+      { nome: "Zé da Manga" },
+      { $set: { ativo: false } }
+      )
+
+### Atualizar VÁRIOS documentos
+
+#### Código: db["aula_crud"].updateMany({})
 
 
+    db["aula_crud"].updateMany(
+      { curso: "Engenharia" },
+      { $set: { curso: "Engenharia Software" } }
+      )
 
+## Incrementar a idade de todos em +1
 
+#### Código: db["aula_crud"].updateMany({})
+
+    db["aula_crud"].updateMany(
+     {},
+     { $inc: { idade: 1 } }
+)
+
+## Adicionar uma nova nota em um array
+
+#### Código: db["aula_crud"].updateOne({})
+
+    db["aula_crud"].updateOne(
+      { nome: "Bruno" },
+      { $push: { notas: 10 } }
+)
 
    [<- VOLTAR](https://github.com/igorcardiias/Banco-de-Dados-N-o-Relacionais.git)  
 
