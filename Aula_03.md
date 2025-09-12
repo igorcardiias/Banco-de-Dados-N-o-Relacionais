@@ -70,4 +70,23 @@ CRUD são as quatro operações fundamentais em qualquer banco de dados:
     { nome: 1, curso: 1, _id: 0 }
     )     
 
+
+## 🔑 Operadores de consulta(Buscas):
+
+    $gt: maior que
+    $lt: menor que
+    $gte: maior ou igual
+    $lte: menor ou igual
+    $ne: diferente
+    $in: está na lista
+
+
+
+
+
+
+
+
+
    [<- VOLTAR](https://github.com/igorcardiias/Banco-de-Dados-N-o-Relacionais.git)  
+
