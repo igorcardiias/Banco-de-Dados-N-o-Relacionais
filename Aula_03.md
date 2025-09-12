@@ -73,15 +73,31 @@ CRUD são as quatro operações fundamentais em qualquer banco de dados:
 
 ## 🔑 Operadores de consulta(Buscas):
 
+    
     $gt: maior que
+    
     $lt: menor que
+    
     $gte: maior ou igual
+    
     $lte: menor ou igual
+    
     $ne: diferente
+    
     $in: está na lista
 
-
-
+## ------------------------------------------------
+## 🔑 Operadores de atualização:
+    
+    $set: define valor (cria se não existe)
+    
+    $inc: incrementa valor numérico
+    
+    $push: adiciona item ao array
+    
+    $pull: remove item do array
+    
+    $unset: remove campo
 
 
 
