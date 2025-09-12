@@ -55,3 +55,17 @@ CRUD são as quatro operações fundamentais em qualquer banco de dados:
         ativo: true
     }
     ])
+
+## Para fazer buscas em um campo específico no MongoDB
+
+### Código: db["aula_crud"].find().pretty()
+
+      db["aula_crud"].find({ nome: "Zé da Manga" }).pretty()
+### ----------------------------------------------------------      
+
+## Buscar com projeção (mostrar apenas nome e curso, sem _id)
+
+    db["aula_crud"].find(
+    { ativo: true },
+    { nome: 1, curso: 1, _id: 0 }
+    )     
