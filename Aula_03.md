@@ -137,7 +137,7 @@ CRUD são as quatro operações fundamentais em qualquer banco de dados:
     db["aula_crud"].updateMany(
      {},
      { $inc: { idade: 1 } }
-)
+    )
 
 ## Adicionar uma nova nota em um array
 
@@ -146,7 +146,7 @@ CRUD são as quatro operações fundamentais em qualquer banco de dados:
     db["aula_crud"].updateOne(
       { nome: "Bruno" },
       { $push: { notas: 10 } }
-    )
+     )
 
 ## Deletar UM específico
 #### db["aula_crud"].deleteMany({})
