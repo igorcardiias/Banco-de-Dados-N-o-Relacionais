@@ -24,7 +24,7 @@ CRUD são as quatro operações fundamentais em qualquer banco de dados:
         curso: "Engenharia",
         notas: [8.5, 9.0, 7.0],
         ativo: true
-})
+    })
 
 ## Inserir VÁRIOS documentos de uma vez
 
@@ -98,6 +98,16 @@ CRUD são as quatro operações fundamentais em qualquer banco de dados:
     $pull: remove item do array
     
     $unset: remove campo
+## -----------------------------------------------   
+
+## 🔑 Boas práticas:
+    deleteOne: remove apenas o primeiro documento encontrado
+
+    deleteMany: remove todos os documentos que atendem ao filtro
+
+    Use filtros específicos para evitar exclusões acidentais
+
+    Sempre faça backup antes de operações de exclusão em massa
 
 ## -----------------------------------------------
 
@@ -136,7 +146,20 @@ CRUD são as quatro operações fundamentais em qualquer banco de dados:
     db["aula_crud"].updateOne(
       { nome: "Bruno" },
       { $push: { notas: 10 } }
-)
+    )
+
+## Deletar UM específico
+#### db["aula_crud"].deleteMany({})
+
+    db["aula_crud"].deleteOne({ nome: "Carla" })
+
+## Deletar TODOS de um curso
+
+    db["aula_crud"].deleteMany({ curso: "Medicina" })
+
+## Deletar TODOS da coleção
+
+    db["aula_crud"].deleteMany({})
 
    [<- VOLTAR](https://github.com/igorcardiias/Banco-de-Dados-N-o-Relacionais.git)  
 
